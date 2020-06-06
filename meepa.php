@@ -1,6 +1,12 @@
 <?php
 
-list($preChars, $startChars, $middleVowels, $endChars, $extraChars) = require_once('lib_v1.php');
+list(
+    $preChars,
+    $startChars,
+    $middleVowels,
+    $endChars,
+    $extraChars
+) = require_once('lib_v1.php');
 
 $totalWordOutput = 20;
 $preDenominator = 4;
@@ -9,6 +15,10 @@ $extraDenominator = 4;
 $basicInRowMax = 3;
 $basicInRowCount = 0;
 $forceNotBasic = FALSE;
+
+function word($opt) {
+
+}
 
 for($i=0; $i<$totalWordOutput; $i++) {
     $word = '';
